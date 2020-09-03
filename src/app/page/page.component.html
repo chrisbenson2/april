@@ -1,0 +1,13 @@
+<div class="container" style="background-color: black">
+  <canvas id="my-canvas" style="height: 125px;width: 400px"></canvas>
+
+  <div class="card" style="background-color: black">
+    <img *ngIf="!open" src="assets/Gift.gif" alt="..." class="img-fluid center" style="text-align: center; width:500px;height:500px;">
+    <img *ngIf="open" src="assets/Boys.jpg" alt="..." class="img-fluid center" style="text-align: center; width:400px;height:550px;">
+  </div>
+  <button *ngIf="!open" type="button" class="btn btn-primary center" (click)="openGift()">Open Gift</button>
+  <h1 *ngIf="open" style="text-align: center; color: white">Keep it secret please!</h1>
+
+</div>
+
+
