@@ -28,7 +28,7 @@ export class PageComponent implements OnInit {
   // tslint:disable-next-line:typedef
   playAudio(){
     const audio = new Audio();
-    audio.src = '../assets/crowdapplause1.wav';
+    audio.src = 'https://raw.githubusercontent.com/chrisbenson2/april/master/src/assets/crowdapplause1.wav';
     audio.load();
     audio.play();
   }
